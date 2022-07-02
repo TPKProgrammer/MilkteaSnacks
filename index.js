@@ -1,3 +1,5 @@
+
+/*BLURRING*/
 const loadText = document.querySelector('.loading-text')
 const bg = document.querySelector('.hero')
 
@@ -20,4 +22,36 @@ function blurring() {
 
 function scale (number, inMin, inMax, outMin, outMax) {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+}
+
+
+
+
+
+/*HAMBURGER*/
+const menu = document.getElementById("menu");
+
+
+menu.onclick = function(){
+    menu.classList.toggle("openmenu");
+}
+
+
+
+/*MENU-ITEMS*/
+const menuItems = document.getElementById("menu-items");
+
+menuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(menuItems.style.maxHeight == "0px")
+    {
+            menuItems.style.maxHeight = "550px"
+            menuItems.style.opacity = 1;
+    }
+      else
+        {
+            menuItems.style.maxHeight = "0px"
+            menuItems.style.opacity = 0.9;
+        }
 }
