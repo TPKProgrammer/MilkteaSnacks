@@ -1,0 +1,787 @@
+.menu {
+    min-height: 115vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 80px auto;
+    background: rgba(51, 51, 51, 0.068);
+   /*background: #ff4500;*/
+}
+
+
+/*NAV*/
+.menu .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: linear-gradient(40deg, #3378ff 20%, #ff4400e1 20%, #3378ff 20%, #ff4400e1 20%);
+}
+
+.menu .nav .logo h3 a  {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px dashed #333;
+}
+
+.menu .nav ul li img {
+    width: 30px;
+}
+
+.menu .nav .top-nav {
+    display: flex;
+}
+
+.menu .nav .top-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu .nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.menu .nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #333;
+    display: block;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.menu .nav ul li a:hover::after {
+    transform: scale(1);
+}
+
+.menu .nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.705);
+    word-spacing: 5px;
+    opacity: 1;
+}
+
+ul .icons li a::after,
+ul .icons li a::after {
+    all: unset;
+}
+
+/*NAV2*/
+.menu .nav2 {
+    height: 80px;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu .nav2 ul {
+    display: flex;
+    margin-right: 10%;
+}
+
+.menu .nav2 ul li {
+    list-style: none;
+    margin-right: 30%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu .nav2 .src {
+    flex: 1;
+    margin-left: 20%;
+}
+
+.menu .nav2 input {
+    width: 700px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    border: 2px solid rgba(51, 51, 51, 0.363);
+}
+
+.menu .nav2 button {
+    height: 43px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(to right, #3378ff, #9442fe);
+}
+
+.menu .nav2 button:hover {
+    box-shadow: 0 0 10px 0 #000;
+}
+
+/*SALES PRODUCT*/
+.menu .sales-product {
+    height: 500px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+}
+
+/*MENUS*/
+.menu .sales-product .menus .box {
+    height: 450px;
+    width: 150px;
+    background: #fff;
+    margin: 24% 2% 4% 15%;
+    padding-top: 1px;
+    border-radius: 5px;
+    border: 2px solid #ff4500;
+}
+
+.menu .sales-product .menus .box .name {
+    margin-top: 40%;
+}
+
+.menu .sales-product .menus .box h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    font-size: 3rem;
+}
+
+/*MEGA SALE*/
+.menu .sales-product .mega-sale .box {
+    height: 450px;
+    width: 850px;
+    background: #fff;
+    margin-top: 5.5%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: linear-gradient(70deg, #3378ff 50%, #9442fe 50%);
+}
+
+.menu .sales-product .mega-sale .box .image {
+    position: relative;
+}
+
+.menu .sales-product .mega-sale .box .image img {
+    height: 430px;
+    left: 0;
+    bottom: 10%;
+    position: absolute;
+}
+
+.menu .sales-product .mega-sale .box .hero-text {
+    margin: 20% auto auto 15%;
+}
+
+.menu .sales-product .mega-sale .box .hero-text .top {
+    margin-bottom: 15%;
+    margin-left: 40%;
+}
+
+.menu .sales-product .mega-sale .box .hero-text .top h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: #ff4500;
+    width: fit-content;
+    padding: 0 3%;
+    margin-bottom: 5%;
+}
+
+.menu .sales-product .mega-sale .box .hero-text .top p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.menu .sales-product .mega-sale .box h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 65px;
+    color: rgba(255, 255, 255, 0.945);
+}
+
+.menu .sales-product .mega-sale .box h2 {
+    font-size: 4.2rem;
+    font-weight: 300;
+    line-height: 65px;
+    margin-bottom: 5%;
+    color: rgba(255, 255, 255, 0.945);
+}
+
+.menu .sales-product .mega-sale .box .live p {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+/*FLAVOR*/
+.menu .sales-product .mega-sale .box .image .container {
+    position: absolute;
+    bottom: 2.7%;
+    left: 20%;
+}
+
+.menu .sales-product .mega-sale .box .image .container .flavor {
+    margin-left: 190px;
+}
+
+/*BOX-1 */
+.menu .sales-product .mega-sale .box .image .container .box-1 {
+    height: 65px;
+    width: 290px;
+    background: #fff;
+    padding-left: 30px;
+    color: #ff4500;
+    box-shadow: 8px 6px 5px 0 #ff4400da;
+}
+
+.menu .sales-product .mega-sale .box .image .container .box-1 .row-1 {
+    display: flex;
+}
+
+.menu .sales-product .mega-sale .box .image .container .box-1 h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-top: 2%;
+}
+
+.menu .sales-product .mega-sale .box .image .container .box-1 .row-1 h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ff4500;
+    margin-left: 45px;
+    border-bottom: 1px dotted #ff4500;
+    transform: rotateY(0deg) rotate(-10deg);
+}
+
+.menu .sales-product .mega-sale .box .image .container .box-1 p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-left: 4%;
+    text-decoration: line-through;
+}
+
+.menu .sales-product .mega-sale .box .image .container h6 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+/*DISCOV*/
+.menu .sales-product .mega-sale .box .image .discov {
+    position: absolute;
+    right: 0;
+    top: 1.1%;
+}
+
+.menu .sales-product .mega-sale .box .image .discov a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: #ff4500;
+    padding: 10px 15px;
+    transition: 0.5s ease-in;
+    color: rgba(255, 255, 255, 0.945);
+}
+
+.menu .sales-product .mega-sale .box .image .discov a:hover {
+    box-shadow: 0 5px 5px 0 #333;
+}
+
+/*SALES*/
+.menu .sales-product .sale {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/*BOX-1*/
+.menu .sales-product .sale .box-1 {
+    margin-top: 47px;
+    margin-right: 50px;
+    height: 210px;
+    width: 240px;
+    border-radius: 5px;
+    background: linear-gradient(75deg, #3378ff 50%, #9442fe 50%);
+}
+
+.menu .sales-product .sale .box-1 .prime {
+    margin-left: 70px;
+    margin-top: 20px; 
+}
+
+.menu .sales-product .sale .box-1 .prime p {
+    padding-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.945);
+    border-left: 1px solid rgba(255, 255, 255, 0.767);
+}
+
+.menu .sales-product .sale .box-1 .enjoy {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.menu .sales-product .sale .box-1 .enjoy h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    word-spacing: 7px;
+}
+
+.menu .sales-product .sale .box-1 .enjoy p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.menu .sales-product .sale .box-1 .subs {
+   margin-left: 146px;
+}
+
+.menu .sales-product .sale .box-1 .subs a {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #ff4500;
+    text-decoration: none;
+    background: #fff;
+    padding: 5px 12px;
+    transition: 0.5s ease-in;
+}
+
+.menu .sales-product .sale .box-1 .subs a:hover {
+    box-shadow: 0 5px 5px 0 #333;
+}
+
+/*BOX-2*/
+.menu .sales-product .sale .box-2 {
+    margin-top: 30px;
+    margin-right: 50px;
+    height: 210px;
+    width: 240px;
+    border-radius: 5px;
+    background: linear-gradient(75deg, #3378ff 50%, #ff4400e7 50%);
+}
+
+.menu .sales-product .sale .box-2 .crown {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.menu .sales-product .sale .box-2 .crown p{
+    font-size: 2.5rem;
+    color: #ff4400e7;
+}
+
+.menu .sales-product .sale .box-2 h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 28px;
+    word-spacing: 7px;
+}
+
+.menu .sales-product .sale .box-2 h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 60px;
+    line-height: 15px;
+    margin-bottom: 47px;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.menu .sales-product .sale .box-2 .dis {
+    margin-left: 141px;
+}
+ 
+.menu .sales-product .sale .box-2 .dis a {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #ff4500;
+  text-decoration: none;
+  background: #fff;
+  padding: 5px 22px;
+  transition: 0.5s ease-in;
+}
+ 
+.menu .sales-product .sale .box-2 .dis a:hover {
+  box-shadow: 0 5px 5px 0 #333;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .menu {
+        min-height: 160vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 80px auto;
+        background: rgba(51, 51, 51, 0.068);
+        /* background: #ff4500; */
+    }
+
+    .menu .nav {
+        padding: 0;
+    }
+    
+    .menu .nav .logo {
+        margin-left: 15px;
+    }
+
+    .menu .nav .logo h3 a {
+        font-size: 20px;
+    }
+
+    .menu .nav .top-nav {
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        height: 550px;
+        width: 100vw;
+        background: #fff;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+
+    .menu .top-nav ul {
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        top: 18%;
+        left: 17%;
+        flex-direction: column;
+    }
+
+    .menu .top-nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 7px 0;
+    }
+
+    .menu .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu .nav ul li a {
+        color: #000;
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .menu .nav ul li a:hover::after {
+        display: none;
+    }
+
+    .menu .nav ul li a::after {
+        display: none;
+    }
+
+    .menu .hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu .hamburger div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu .hamburger span {
+        background: #333;
+        width: 30px;
+        height: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s, width 0.3s;
+    }
+
+    .menu .hamburger .line-1 {
+        transform: translate(-50%, -8px);
+    }
+
+    .menu .hamburger .line-3 {
+        transform: translate(-50%, 5px);
+    }
+
+    .menu .hamburger .line-2 {
+        display: none;
+    }
+
+    .menu .openmenu .line-1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .menu .openmenu .line-3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menu .openmenu .line-2 {
+        width: 0;
+    }
+
+    .menu .nav {
+        background: linear-gradient(45deg, #3378ff 20%, #ff4400e1 20%, #3378ff 20%, #ff4400e1 20%);
+    }
+
+    .menu .nav .logo h3 a {
+        color: #000;
+        border: 2px dashed #000;
+    }
+
+    .menu .hamburger span {
+        background: #000;
+    }
+
+    /*INPUT*/
+    .menu .nav2 input {
+        width: 130px;
+        height: 40px;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding-left: 5px;
+        font-size: 0.7rem;
+    }
+
+    .menu .nav2 .src {
+        margin-left: 5px;
+    }
+
+    /*BUTTON*/
+    .menu .nav2 button {
+        height: 40px;
+        width: 60px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .menu .nav2 button:hover {
+        box-shadow: none;
+    }
+
+    .menu .nav2 ul {
+        margin-right: 15%;
+    }
+
+    .menu .nav2 ul li {
+        margin-right: 15%;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
+    /*SALES PRODUCT*/
+    .menu .sales-product {
+        height: 500px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 70px 1fr 450px;
+    }
+
+    /*MENUS*/
+    .menu .sales-product .menus .box {
+        height: 50px;
+        width: 300px;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 23px;
+        position: relative;
+    }
+
+    .menu .sales-product .mega-sale .box .hero-text {
+        margin: 20% auto auto 8%;
+    }
+
+    .menu .sales-product .menus .box .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        bottom: 7%;
+        left: 20%;
+    }
+
+    .menu .sales-product .menus .box h1 {
+        flex-direction: none;
+        margin-top: 10%;
+        font-size: 1.8rem;
+        margin-right: 30px;
+    }
+
+    /*MEGA SALE*/
+    .menu .sales-product .mega-sale .box {
+        height: 230px;
+        width: 360px;
+        background: #fff;
+        margin-top: 5.5%;
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        background: linear-gradient(70deg, #3378ff 50%, #9442fe 50%);
+    }
+
+    .menu .sales-product .mega-sale .box .hero-text .top {
+        margin: 0;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .menu .sales-product .mega-sale .box .hero-text .top h5 {
+        font-size: 1rem;
+        font-weight: 800;
+        background: #ff4500;
+        width: fit-content;
+        padding: 3% 5%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .menu .sales-product .mega-sale .box h1 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.945);
+    }
+
+    .menu .sales-product .mega-sale .box h2 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 3px;
+        color: rgba(255, 255, 255, 0.945);
+    }
+
+    .menu .sales-product .mega-sale .box .live p {
+        font-size: 0.6rem;
+        font-weight: 700;
+        line-height: 13px;
+        color: rgba(255, 255, 255, 0.911);
+    }
+
+    /*IMG*/
+    .menu .sales-product .mega-sale .box .image img {
+        height: 160px;
+        left: -20%;
+        bottom: 14%;
+        position: absolute;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container {
+        position: absolute;
+        bottom: 4%;
+        left: 5%;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container .flavor {
+        margin-left: 60px;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container h6 {
+        font-size: 0.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 3px;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container .box-1 {
+        height: 35px;
+        width: 130px;
+        background: #fff;
+        padding-left: 10px;
+        color: #ff4500;
+        box-shadow: 3px 4px 5px 0 #ff4400da;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container .box-1 h3 {
+        font-size: 0.7rem;
+        font-weight: 800;
+        padding-top: 2%;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container .box-1 .row-1 h4 {
+        margin: 0;
+        font-size: 0.5rem;
+        font-weight: 800;
+        color: #ff4500;
+        margin-left: 20px;
+        border-bottom: 1px dotted #ff4500;
+        transform: rotateY(0deg) rotate(-10deg);
+        line-height: 15px;
+    }
+
+    .menu .sales-product .mega-sale .box .image .container .box-1 p {
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin-left: 4%;
+        text-decoration: line-through;
+    }
+
+    .menu .sales-product .mega-sale .box .image .discov {
+        position: absolute;
+        right: 0;
+        top: 1%;
+    }
+
+    .menu .sales-product .mega-sale .box .image .discov a {
+        text-decoration: none;
+        font-size: 0.5rem;
+        font-weight: 700;
+        background: #ff4500;
+        padding: 10px 15px;
+        transition: 0.5s ease-in;
+        color: rgba(255, 255, 255, 0.945);
+    }
+
+    /*SALE*/
+    .menu .sales-product .sale .box-1 {
+       margin: 0;
+       margin-top: 40px;
+       margin-left: 60px;
+    }
+
+    .menu .sales-product .sale .box-2 {
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+
+    /*FOOTER*/
+}

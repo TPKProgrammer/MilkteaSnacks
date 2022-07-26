@@ -55,3 +55,59 @@ function menutoggle(){
             menuItems.style.opacity = 0.9;
         }
 }
+
+/*MENU-DRINKS&SNACKS*/
+let x = document.getElementById("Drinks");
+let y = document.getElementById("Snacks");
+let z = document.getElementById("btn");
+let a = document.getElementById("Header");
+
+function snacks(){
+    z.style.left = "200px";
+    y.style.left = "5px";
+    x.style.left = "-500px";
+    y.style.display = "block";
+    x.style.display = "none";
+    a.innerHTML = "SNACKS";
+}
+function drinks(){
+    z.style.left = "0px";
+    y.style.left = "500px";
+    x.style.left = "5px";
+    y.style.display = "none";
+    x.style.display = "block";
+    a.innerHTML = "DRINKS";
+    
+}
+
+
+/*var mediaQuery = window.matchMedia("(max-width: 700px)");
+
+function snacks(){
+    let y = window.matchMedia("(max-width: 425px)");
+
+    z.style.left = "110px";
+    y.style.left = "5px";
+    x.style.left = "-500px";
+    y.style.display = "block";
+    x.style.display = "none";
+}
+function drinks(){
+    z.style.left = "0px";
+    y.style.left = "500px";
+    x.style.left = "5px";
+    y.style.display = "none";
+    x.style.display = "block";
+}*
+/*document.addEventListener('DOMContentLoaded', init);
+
+function init(){
+    let query = window.matchMedia("(max-width: 425px)");
+
+    if(query.matches){
+        document.getElementById('Drinks').style.left = "5px";
+    }
+    else{
+        document.getElementById('Snacks').style.left = ""
+    }
+}*/

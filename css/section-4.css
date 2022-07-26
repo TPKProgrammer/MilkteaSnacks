@@ -1,0 +1,92 @@
+.section-4 {
+    height: 85vh;
+    width: 100vw;
+    background: #253551;
+    margin-top: 1.2%;
+    display: grid;
+    grid-template-rows: 1fr,auto;
+}
+
+.section-4 .direction {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.section-4 .direction h2 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.904);
+    font-family: none;
+    word-spacing: 5px;
+    line-height: 52px;
+    margin-bottom: 6.3%;
+}
+
+.section-4 .sec4-btn {
+    padding: 20px 80px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.section-4 .sec4-btn:hover {
+    background: #fff;
+}
+
+.section-4  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+}
+
+.section-4  a:hover {
+    color: #253551;
+}
+
+.section-4 .schedule {
+    text-align: center;
+}
+
+.section-4 .schedule .row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.section-4 .schedule .row .col h3 {
+    font-size: 2.1rem;
+    font-weight: 300;
+    font-family: none;
+    color: rgba(255, 255, 255, 0.904);
+    line-height: 47px;
+}
+
+@media only screen and (max-width: 700px) {
+    .section-4 .direction h2 {
+        font-size: 1.9rem;
+        line-height: 37px;
+        margin-bottom: 20%;
+    }
+
+    .section-4 .sec4-btn {
+        padding: 15px 40px;
+        letter-spacing: 0;
+    }
+
+    .section-4 .schedule .row {
+        flex-direction: column;
+    }
+
+    .section-4 .schedule .row .col h3 {
+        font-size: 1.6rem;
+        line-height: 37px;
+    }
+
+    .section-4 .schedule .row .col {
+        margin-top: 8%;
+    }
+}

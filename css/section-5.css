@@ -1,0 +1,137 @@
+.section-5 {
+    height: 77vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.3) url(../img/slicingacake.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+.section-5 .content {   
+    padding-top: 10%;
+    text-align: center;
+}
+
+.section-5 .content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.904);
+    margin-bottom: 2%;
+}
+
+.section-5 .content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.904);
+    margin-bottom: 2.8%;
+}
+
+.section-5 .hide {
+    display: none;
+}
+
+.section-5 .content input {
+    padding: 25px 160px;
+    padding-left: 30px;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    outline: none;
+}
+
+.section-5 .content ::placeholder {
+    color: rgb(117, 112, 112);
+    word-spacing: 3px;
+    font-size: 1rem;
+}
+
+.section-5 .sec5-btn {
+    padding: 25px 30px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+
+.section-5 .sec5-btn:hover {
+    background: #fff;
+}
+
+.section-5  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+}
+
+.section-5  a:hover {
+    color: #253551;
+}
+
+@media only screen and (max-width: 700px) {
+    .section-5 {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .section-5 .content {
+        display: block;
+        padding-top: 15%;
+        text-align: center;
+    }
+
+    .section-5 .content h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.904);
+        margin-bottom: 3%;
+    }
+
+    .section-5 .content p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.904);
+        margin-bottom: 2.8%;
+    }
+
+    .section-5 .content input {
+        padding: 15px 90px;
+        padding-left: 30px;
+        margin-top: 2%;
+        margin-bottom: 15%;
+        outline: none;
+    }
+
+    .section-5 .content ::placeholder {
+        color: #333;
+        word-spacing: 3px;
+    }
+
+    .section-5 .sec5-btn {
+        padding: 10px 40px;
+        border: 2px solid #fff;
+        background: transparent;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    
+    .section-5 .sec5-btn:hover {
+        background: #fff;
+    }
+    
+    .section-5  a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        word-spacing: 8px;
+        letter-spacing: 2px;
+    }
+    
+    .section-4  a:hover {
+        color: #253551;
+    }
+}

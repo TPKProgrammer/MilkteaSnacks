@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+     
+    <!--FRONT HOME-->
     <div class="front-home">
 
         <div class="nav">
@@ -18,8 +19,8 @@
           
           <div class="top-nav" id="menu-items">
               <ul>
-                  <li><a href="">Our Story</a></li>
-                  <li><a href="">Menu</a></li>
+                  <li><a href="ourStory.html">Our Story</a></li>
+                  <li><a href="menu.html">Menu</a></li>
                   <li><a href="">Photos</a></li>
                   <li><a href="">Make a Reservation</a></li>
                   <div class="icons">
@@ -29,7 +30,7 @@
              </ul>
           </div>
      
-
+          <!--FOR SMALL DEVICE-->
             <div  class="hamburger" id="menu">
                 <div onclick="menutoggle()">
                     <span class="line-1"></span>
@@ -41,7 +42,7 @@
         </div>
 
 
-        <div class="hero">
+       <div class="hero">
 
             <div class="loading-text">
                 0%
@@ -50,7 +51,7 @@
           <div class="hero-nav">
 
               <ul>
-                   <li data-text="Our Story"><a href="">Our Story</a></li>
+                   <li data-text="Our Story"><a href="ourStory.html">Our Story</a></li>
                    <li data-text="Menu"><a href="">Menu</a></li>
                    <li data-text="Photos"><a href="">Photos</a></li>
                    <li data-text="Reservations"><a href="">Reservations</a></li>
@@ -60,13 +61,106 @@
            
         </div>
     </div>
-
-    <div class="second-front-home">
-        <section1 class="section1">
-            <h4>Located in Mangaldan, Pangasinan, Philippines serves Authentic foods from<br>
+ 
+    <!--SECTION 1-->
+  <div class="section-1">
+       <div class="heading">
+          <h4>Located in Mangaldan, Pangasinan, Philippines serves Authentic foods from<br class="hide">
             this shop in a modern industrial space.</h4>
-        </section1>
+          <h5>We also serve beer, wines and party.</h5>
+       </div>
+
+        <div class="btn">
+            <a href="" class="sec1-btn">Make a Reservation</a>
+        </div>
+        
     </div>
+       
+    <!--SECTION 2--> 
+ <div class="section-2">
+        <div class="row">
+            <div class="col">
+                <h3>Drinks originated in the Pangasinan region of<br class="hide"> Mangaldan and are small plates typically<br class="hide"> consumed with wine or snacks.</h3>
+                <p>We combine traditional preparations with<br class="hide"> local ingredients for dishes that are authentic to both<br class="hide"> their Pangasinan origins and Philippines setting.</p>
+                <p><a href="">Learn more about our story.</a></p>
+            </div>
+
+            <div class="col">
+                <div class="image">
+                    <img src="./img/section2.webp"> 
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!--SECTION 3--> 
+  <div class="section-3">
+        <div class="img">
+            <img src="./img/section-3 bg.jpeg">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="img">
+                    <img src="./img/sec-3 row.webp">
+                </div>
+            </div>
+            <div class="col">
+                <div class="container">
+                    <h3>Milktea is the typical accompaniment to<br class="hide"> snacks and we invite you to sample our<br class="hide"> extensive and surprise list.</h3>
+                    <p>In addition, we offer craft beer, spanish and<br class="hide"> american wines, a full bar and variety of<br class="hide"> delightful non-alcoholic options.</p>
+                </div>
+              
+            </div>
+        </div>
+    </div> 
+
+    <!--SECTION 4--> 
+    <div class="section-4">
+        <div class="direction">
+            <h2>123 Mang Street<br class="hide"> Philippines, Pangasinan 12345</h2>
+            <a href="" class="sec4-btn">Get Directions</a>
+        </div>
+        <div class="schedule">
+            <div class="row">
+                <div class="col">
+                    <h3>Monday-Thursday<br> 12pm-10pm</h3>
+                </div>
+
+                <div class="col">
+                    <h3>Friday-Sunday<br> 12pm-11pm</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION 5--> 
+    <div class="section-5">
+        <div class="content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Sign up to receive news and updates</p>
+            <input type="email" placeholder="Email Address"><br class="hide">
+            <a href="" class="sec5-btn">Sign Up</a>
+        </div>
+    </div>
+
+   <!--FOOTER--> 
+   <div class="footer">
+        <div class="name">
+            <h3>Patrick</h3>
+            <p>Made with <span>TpkProgrammer</span></p>
+        </div>
+        <div class="street">
+            <p>123 Mang Street</p>
+            <p>Pangasinan, PH 12345</p>
+        </div>
+        <div class="email">
+            <p>email@example.com</p>
+            <p>(555) 555-5555</p>
+        </div>
+        <div class="icons">
+            <img src="./img/fb.png"> <img src="./img/twitter.png">
+        </div>
+   </div>
 
     <script src="./index.js"></script>
 

@@ -1,0 +1,239 @@
+.our-story {
+    min-height: 115vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+
+/*NAV*/
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.nav .logo h3 a  {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px dashed #333;
+}
+
+.nav ul li img {
+    width: 30px;
+}
+
+.nav .top-nav {
+    display: flex;
+}
+
+.nav .top-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #333;
+    display: block;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.nav ul li a:hover::after {
+    transform: scale(1);
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(117, 112, 112);
+    word-spacing: 5px;
+    opacity: 1;
+}
+
+ul .icons li a::after,
+ul .icons li a::after {
+    all: unset;
+}
+
+/*CONTENT*/
+.our-story .content {
+    text-align: left;
+    margin: 4% 16%;
+    margin-bottom: 9%;
+}
+
+.our-story .content h1 {
+    margin-bottom: 8%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.our-story .content p {
+    font-size: 1.1rem;
+    font-family: none;
+    line-height: 30px;
+    word-spacing: 9px;
+    letter-spacing: 2px;
+    color: rgba(117, 112, 112, 0.842);
+}
+
+@media only screen and (max-width: 700px) {
+    .section-3-ourstory .img img {
+        width: 360px;
+        height: 55vh;
+    }
+
+    .our-story .content {
+        text-align: left;
+        margin: 20% 10%;
+        margin-bottom: 9%;
+    }
+
+    .our-story .nav {
+        padding: 0;
+    }
+
+    .our-story .content {
+        text-align: left;
+        margin: 20% 5%;
+        margin-bottom: 9%;
+    }
+
+    .our-story .content h1 {
+        margin-bottom: 12%;
+    }
+
+    .our-story .nav {
+        padding: 0;
+    }
+    
+    .our-story .nav .logo {
+        margin-left: 15px;
+    }
+
+    .our-story .nav .logo h3 a {
+        font-size: 20px;
+    }
+
+    .our-story .nav .top-nav {
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        height: 550px;
+        width: 100vw;
+        background: #fff;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+
+    .our-story .top-nav ul {
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        top: 18%;
+        left: 17%;
+        flex-direction: column;
+    }
+
+    .our-story .top-nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 7px 0;
+    }
+
+    .our-story .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-story .nav ul li a {
+        color: #000;
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .our-story .nav ul li a:hover::after {
+        display: none;
+    }
+
+    .our-story .nav ul li a::after {
+        display: none;
+    }
+
+    .our-story .hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .our-story .hamburger div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .our-story .hamburger span {
+        background: #333;
+        width: 30px;
+        height: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s, width 0.3s;
+    }
+
+    .our-story .hamburger .line-1 {
+        transform: translate(-50%, -8px);
+    }
+
+    .our-story .hamburger .line-3 {
+        transform: translate(-50%, 5px);
+    }
+
+    .our-story .hamburger .line-2 {
+        display: none;
+    }
+
+    .our-story .openmenu .line-1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .our-story .openmenu .line-3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .our-story .openmenu .line-2 {
+        width: 0;
+    }
+}

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap');
 @import url(front-home.css);
-@import url(second-front-home.css);
+@import url(section-1.css);
+@import url(section-2.css);
+@import url(section-3.css);
+@import url(section-4.css);
+@import url(section-5.css);
+@import url(footer.css);
+@import url(ourstory.css);
+@import url(photos.css);
+@import url(menu.css);
+@import url(choices.css);
 
 * {
     margin: 0;
@@ -8,3 +17,6 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+    width: 100vw;
+}

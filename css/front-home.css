@@ -1,6 +1,6 @@
 
 .front-home {
-    min-height: 100vh;
+    min-height: 115vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin: 0 50px;
+    padding: 0 50px;
 }
 
 .nav .logo h3 a  {
@@ -26,7 +26,7 @@
 }
 
 .nav ul li img {
-    width: 35px;
+    width: 30px;
 }
 
 .nav .top-nav {
@@ -61,10 +61,11 @@
 
 .nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     color: rgb(117, 112, 112);
     word-spacing: 5px;
+    opacity: 1;
 }
 
 ul .icons li a::after,
@@ -87,8 +88,8 @@ ul .icons li a::after {
     font-size: 40px;
     color: #fff;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 35%;
+    left: 47%;
 }
 
 .hero .hero-nav {
@@ -159,7 +160,7 @@ ul .icons li a::after {
 .hero ul li a:hover {
     transform: scale(1.4);
     z-index: 1000;
-    background: red;
+    background: linear-gradient(to right, #ff0000, #f44336);
     border-radius: 5px;
     opacity: 1;
 }
@@ -190,20 +191,20 @@ ul .icons li a::after {
     display: flex;
 }
 
-@media (max-width: 425px) {
-    .nav {
-        margin: 0;
+@media only screen and (max-width: 700px) {
+    .front-home .nav {
+        padding: 0;
     }
     
-    .nav .logo {
+    .front-home .nav .logo {
         margin-left: 15px;
     }
 
-    .nav .logo h3 a {
+    .front-home .nav .logo h3 a {
         font-size: 20px;
     }
 
-    .nav .top-nav {
+    .front-home .nav .top-nav {
         position: absolute;
         top: 100px;
         z-index: 1;
@@ -214,7 +215,7 @@ ul .icons li a::after {
         overflow: hidden;
     }
 
-    .top-nav ul {
+    .front-home .top-nav ul {
         display: grid;
         justify-content: center;
         position: absolute;
@@ -223,7 +224,7 @@ ul .icons li a::after {
         flex-direction: column;
     }
 
-    .top-nav ul li {
+    .front-home .top-nav ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,26 +232,26 @@ ul .icons li a::after {
         margin: 7px 0;
     }
 
-    .icons {
+    .front-home .icons {
         display: flex;
         justify-content: center;
     }
 
-    .nav ul li a {
+    .front-home .nav ul li a {
         color: #000;
         font-size: 28px;
         font-weight: 200;
     }
 
-    .nav ul li a:hover::after {
+    .front-home.nav ul li a:hover::after {
         display: none;
     }
 
-    .nav ul li a::after {
+    .front-home .nav ul li a::after {
         display: none;
     }
 
-    .hamburger {
+    .front-home .hamburger {
         width: 40px;
         height: 40px;
         margin: 5px;
@@ -261,7 +262,7 @@ ul .icons li a::after {
         margin-right: 20px;
     }
 
-    .hamburger div {
+    .front-home .hamburger div {
         width: 30px;
         height: 30px;
         margin: 5px;
@@ -269,7 +270,7 @@ ul .icons li a::after {
         position: relative;
     }
 
-    .hamburger span {
+    .front-home .hamburger span {
         background: #333;
         width: 30px;
         height: 1px;
@@ -283,27 +284,27 @@ ul .icons li a::after {
         transition: transform 0.3s, width 0.3s;
     }
 
-    .hamburger .line-1 {
+    .front-home .hamburger .line-1 {
         transform: translate(-50%, -8px);
     }
 
-    .hamburger .line-3 {
+    .front-home .hamburger .line-3 {
         transform: translate(-50%, 5px);
     }
 
-    .hamburger .line-2 {
+    .front-home .hamburger .line-2 {
         display: none;
     }
 
-    .openmenu .line-1 {
+    .front-home .openmenu .line-1 {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
-    .openmenu .line-3 {
+    .front-home .openmenu .line-3 {
         transform: translate(-50%, -50%) rotate(45deg);
     }
 
-    .openmenu .line-2 {
+    .front-home .openmenu .line-2 {
         width: 0;
     }
 
@@ -356,5 +357,9 @@ ul .icons li a::after {
         position: absolute;
         top: 15%;
         left: 5%;
+    }
+
+    .hero .loading-text {
+        left: 40%;
     }
 }

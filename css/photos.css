@@ -1,0 +1,19 @@
+.photos {
+    min-height: 115vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.photos-collection {
+    margin: 3% 0;
+}
+
+.photos-collection .row {
+    display: flex;
+}
+
+.photos-collection .row img {
+    height: 300px;
+    
+}

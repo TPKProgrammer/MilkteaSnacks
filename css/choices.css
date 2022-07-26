@@ -1,0 +1,298 @@
+.menu .choices-container {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 100px;
+}
+
+.menu .choices {
+    margin: 80px 50px;
+    background: #fff;
+    height: 525px;
+    width: 1250px;
+    padding-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu .choices .box-button {
+    text-align: center;
+    width: 400px;
+    height: 60px;
+    background: #fff;
+    margin: 25px auto;
+    margin-left: 430px;
+    border-radius: 50px;
+    border: none;
+    cursor:  pointer;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    position: relative;
+}
+
+.menu .choices .box-button .toggle-button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: none;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 40px;
+}
+
+#btn {
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.5s;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+}
+
+#Drinks {
+    left: 5px;
+}
+
+#Snacks {
+    left: 500px;
+    display: none;
+}
+
+/*DRINKS*/
+.menu .choices .drinks {
+    position: absolute;
+}
+
+.menu .choices .drinks .row {
+    display: flex;
+    margin: 0 110px;
+    position: relative;
+}
+
+.menu .choices .drinks .row .col {
+    margin: 90px 20px;
+    width: 215px;
+    height: 270px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+    background: linear-gradient(to right, #3378ff, #9442fe);
+
+}
+
+.menu .choices .drinks .row .col:hover {
+    transform: translateY(-10px);
+}
+
+.menu .choices .drinks .row .col img {
+    height: 150px;
+    margin: 20px 0 10px 60px;
+}
+
+.menu .choices .drinks .row .col .strawberry {
+    margin-left: 40px;
+}
+
+.menu .choices .drinks .row .col .price {
+    margin: 0 0 0 15px;
+}
+
+.menu .choices .drinks .row .col .price p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+.menu .choices .drinks .row .col .price .iced {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.menu .choices .drinks .row .col .price h6 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.menu .choices .drinks .row .col .price .stars {
+    color: #ffad06;
+}
+
+/*SNACKS*/
+.menu .choices .snacks .row {
+    display: flex;
+    margin: 0 110px;
+}
+
+.menu .choices .snacks .row .col {
+    margin: 90px 20px;
+    width: 215px;
+    height: 270px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background: linear-gradient(to right, #3378ff, #9442fe);
+
+}
+
+.menu .choices .snacks .row .col:hover {
+    transform: translateY(-10px);
+}
+
+.menu .choices .snacks .row .col img {
+    height: 150px;
+    margin: 20px 0 10px 60px;
+}
+
+.menu .choices .snacks .row .col .strawberry {
+    margin-left: 40px;
+}
+
+.menu .choices .snacks .row .col .price {
+    margin: 0 0 0 15px;
+}
+
+.menu .choices .snacks .row .col .price p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+.menu .choices .snacks .row .col .price .iced {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.menu .choices .snacks .row .col .price h6 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.menu .choices .snacks .row .col .price .stars {
+    color: #ffad06;
+}
+
+.menu .choices .snacks .row .col .footlong  {
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.menu .choices .snacks .row .col .burger {
+    height: 120px;
+    margin: 0;
+    margin: 40px 0 20px 30px;
+}
+
+.menu .choices .snacks .row .col .shawarma {
+    height: 110px;
+    margin: 0;
+    margin: 45px 0 20px 20px;
+}
+
+.menu .choices .snacks .row .col .spaghetti {
+    height: 80px;
+    margin: 0;
+    margin: 70px 0 20px 15px;
+}
+
+.menu .choices .header {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu .choices-container {
+        height: 240vh;
+        width: 100vw;
+        margin-bottom: 100px;
+        margin-top: 300px;
+    }
+
+    .menu .choices {
+        height: 220vh;
+        width: 330px;
+        margin: 80px 15px;
+    }
+
+    /*BUTTON*/
+    .menu .choices .box-button {
+        margin-left: 53px;
+        width: 220px;
+        height: 40px;
+    }
+
+    .menu .choices .box-button .toggle-button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .menu .choices .box-button button:hover {
+        color: #ff4500;
+    }
+
+    #btn {
+        display: none;
+    }
+
+    /*HEADER*/
+    .menu .choices .header {
+        display: block;
+        margin-left: 120px;
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .menu .choices .header::after {
+        content: '';
+        background: #ff4500;
+        width: 93px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        margin-top: 10px;
+    }
+
+    /*DRINKS*/
+    .menu .choices .drinks .row {
+        flex-direction: column;
+    }
+
+    .menu .choices .drinks .row .col {
+        margin: 30px 20px;
+    }
+
+    .menu .choices .drinks .row {
+        margin: 0;
+        margin-bottom: 900px;
+        margin-left: 35px;
+    }
+
+    /*SNACKS*/
+    .menu .choices .snacks .row {
+        flex-direction: column;
+    }
+
+    .menu .choices .snacks .row .col {
+        margin: 30px 20px;
+    }
+
+    .menu .choices .snacks .row {
+        margin: 0;
+        margin-bottom: 900px;
+        margin-left: 38px;
+    }
+    
+}

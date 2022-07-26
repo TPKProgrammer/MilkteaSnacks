@@ -1,0 +1,81 @@
+.section-1 {
+    height: 65vh;
+    width: 100vw;
+    background: #253551;
+    display: grid;
+    grid-template-rows: 1fr 180px;
+}
+
+.heading {
+    text-align: center;
+}
+
+h4, h5 {
+    font-size: 1.8em;
+    font-family: none;
+    color: rgb(223, 222, 222);
+}
+
+h4 {
+    margin: 90px 0 40px;
+    line-height: 40px;
+}
+
+
+
+.section-1 .btn {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.section-1 .sec1-btn {
+    padding: 20px 60px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.section-1 .sec1-btn:hover {
+    background: #fff;
+}
+
+.section-1  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    word-spacing: 8px;
+}
+
+.section-1  a:hover {
+    color: #253551;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .section-1 {
+        height: 55vh;
+    }
+
+   h4, h5 {
+     margin: 30px 50px;
+     font-size: 1.1em;
+   }
+
+   h4 {
+    line-height: 25px;
+   }
+
+   .hide {
+     display: none;
+   }
+
+   .section-1 .btn {
+    margin-top: 30px;
+   }
+
+   .section-1 .sec1-btn {
+    padding: 15px 40px;
+   }
+}
