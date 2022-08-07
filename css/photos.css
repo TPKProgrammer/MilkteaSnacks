@@ -6,7 +6,7 @@
 }
 
 .photos-collection {
-    margin: 3% 0;
+    margin-top: 15px;
 }
 
 .photos-collection .row {
@@ -14,6 +14,210 @@
 }
 
 .photos-collection .row img {
-    height: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+
+/*EACH PHOTO*/
+.photos .photos-collection .photos4 {
+    width: 530px;
+    margin-right: 10px;
+}
+
+.photos .photos-collection .photos3 {
+    width: 280px;
+    margin-right: 10px;
+}
+
+.photos .photos-collection .photos1 {
+    width: 530px;
+}
+
+.photos .photos-collection .photos6 {
+    width: 450px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.photos .photos-collection .photos2 {
+    width: 470px;
+    margin-right: 10px;
+}
+
+.photos .photos-collection .photos5 {
+    width: 420px;
+}
+
+@media only screen and (max-width: 700px) {
+    .photos .nav {
+        padding: 0;
+    }
+    
+    .photos .nav .logo {
+        margin-left: 15px;
+    }
+
+    .photos .nav .logo h3 a {
+        font-size: 20px;
+    }
+
+    .photos .nav .top-nav {
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        height: 550px;
+        width: 100vw;
+        background: #fff;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+
+    .photos .top-nav ul {
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        top: 18%;
+        left: 17%;
+        flex-direction: column;
+    }
+
+    .photos .top-nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 7px 0;
+    }
+
+    .photos .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos .nav ul li a {
+        color: #000;
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .photos .nav ul li a:hover::after {
+        display: none;
+    }
+
+    .photos .nav ul li a::after {
+        display: none;
+    }
+
+    .photos .hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .photos .hamburger div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .photos .hamburger span {
+        background: #333;
+        width: 30px;
+        height: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s, width 0.3s;
+    }
+
+    .photos .hamburger .line-1 {
+        transform: translate(-50%, -8px);
+    }
+
+    .photos .hamburger .line-3 {
+        transform: translate(-50%, 5px);
+    }
+
+    .photos .hamburger .line-2 {
+        display: none;
+    }
+
+    .photos .openmenu .line-1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .photos .openmenu .line-3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .photos .openmenu .line-2 {
+        width: 0;
+    }
+
+    /*PHOTOS COLLECTION*/
+    .photos-collection .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .photos .nav .logo h3 a {
+        color: #000;
+        border: 2px dashed #000;
+    }
+
+    .photos .hamburger span {
+        background: #000;
+    }
+
+    .photos-collection .row img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*SIZE OF EACH IMG*/
+    .photos .photos-collection .photos4 {
+        width: 375px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .photos .photos-collection .photos3 {
+        width: 375px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .photos .photos-collection .photos1 {
+        width: 375px;
+        margin-bottom: 5px;
+    }
+
+    .photos .photos-collection .photos6 {
+        width: 375px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .photos .photos-collection .photos2 {
+        width: 375px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .photos .photos-collection .photos5 {
+        width: 375px;
+    }
     
 }

@@ -1,0 +1,415 @@
+.reservation {
+    min-height: 130vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+
+/*NAV*/
+.reservation .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.reservation .nav .logo h3 a  {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px dashed #333;
+}
+
+.reservation .nav ul li img {
+    width: 30px;
+}
+
+.reservation .nav .top-nav {
+    display: flex;
+}
+
+.reservation .nav .top-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.reservation .nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.reservation .nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #333;
+    display: block;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.reservation .nav ul li a:hover::after {
+    transform: scale(1);
+}
+
+.reservation .nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(117, 112, 112);
+    word-spacing: 5px;
+    opacity: 1;
+}
+
+.reservation ul .icons li a::after,
+ul .icons li a::after {
+    all: unset;
+}
+
+/*MAKE*/
+.reservation .make {
+    width: 100vw;
+}
+
+/*HEADER*/
+.reservation .make .header {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.reservation .make .header h1 {
+    font-family: none;
+    font-size: 2.5rem;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.reservation .make .header p {
+    font-size: 1.1rem;
+    font-family: none;
+    line-height: 30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    color: rgba(51, 51, 51, 0.658);
+}
+
+/*TABLE*/
+.reservation .make .table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reservation .make .table .box {
+    width: 900px;
+    height: 260px;
+    background: rgba(153,153,153,.15);
+    margin-top: 30px;
+    position: relative;
+}
+
+.reservation .make .table .box .selects {
+    display: flex;
+}
+
+/*SELECT PEOPLE*/
+.reservation .make .table .box .select-people{
+    margin: 50px 0 0 130px;
+}
+
+.reservation .make .table .box .select-people select {
+    width: 200px;
+    height: 45px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.74);
+    padding: 0 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.reservation .make .table .box .select-people select:hover {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+/*SELECT DAY*/
+.reservation .make .table .box .select-day{
+    margin: 50px 0 0 20px;
+}
+
+.reservation .make .table .box .select-day select {
+    width: 200px;
+    height: 45px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.74);
+    padding: 0 15px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.reservation .make .table .box .select-day select:hover {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+/*SELECT TIME*/
+.reservation .make .table .box .select-time {
+    margin: 50px 0 0 20px;
+}
+
+.reservation .make .table .box .select-time select {
+    width: 200px;
+    height: 45px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.74);
+    padding: 0 15px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.reservation .make .table .box .select-time select:hover {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+/*FIND A RESERVE*/
+.reservation .make .table .box .find-reserve {
+    margin: 20px 0 20px 350px;
+}
+
+.reservation .make .table .box .find-reserve button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    background: #000;
+    cursor: pointer;
+}
+
+.reservation .make .table .box .find-reserve button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*TPK*/
+.reservation .make .table .box .tpk {
+    margin-left: 400px;
+}
+
+.reservation .make .table .box .tpk p {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.reservation .make .table .box .tpk p abbr {
+    text-decoration: none;
+    cursor: default;
+}
+
+.reservation .make .table .box .tpk p i {
+    font-size: 1.3rem;
+    color: rgba(255, 0, 0, 0.664);
+    margin-top: 5px;
+}
+
+.reservation .make .table .nisi {
+    margin-top: 15px;
+}
+
+.reservation .make .table .nisi p {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 700px) {
+    .reservation .nav {
+        padding: 0;
+    }
+    
+    .reservation .nav .logo {
+        margin-left: 15px;
+    }
+
+    .reservation .nav .logo h3 a {
+        font-size: 20px;
+    }
+
+    .reservation .nav .top-nav {
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        height: 550px;
+        width: 100vw;
+        background: #fff;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+
+    .reservation .top-nav ul {
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        top: 18%;
+        left: 17%;
+        flex-direction: column;
+    }
+
+    .reservation .top-nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin: 7px 0;
+    }
+
+    .reservation .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reservation .nav ul li a {
+        color: #000;
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .reservation .nav ul li a:hover::after {
+        display: none;
+    }
+
+    .reservation .nav ul li a::after {
+        display: none;
+    }
+
+    .reservation .hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .reservation .hamburger div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .reservation .hamburger span {
+        background: #333;
+        width: 30px;
+        height: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s, width 0.3s;
+    }
+
+    .reservation .hamburger .line-1 {
+        transform: translate(-50%, -8px);
+    }
+
+    .reservation .hamburger .line-3 {
+        transform: translate(-50%, 5px);
+    }
+
+    .reservation .hamburger .line-2 {
+        display: none;
+    }
+
+    .reservation .openmenu .line-1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .reservation .openmenu .line-3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .reservation .openmenu .line-2 {
+        width: 0;
+    }
+
+    /*MAKE HEADER*/
+    .reservation .make .header {
+        margin-top: 50px;
+        margin: 50px 20px 30px 20px;
+    }
+
+    .reservation .make .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .reservation .make .header p {
+        font-size: 0.9rem;
+    }
+
+    /*box*/
+    .reservation .make .table {
+       margin: 15px 30px 0 17px;
+    } 
+
+    .reservation .make .table .box {
+        width: 300px;
+        height: 390px;
+        margin-top: 0;
+    }
+
+    .reservation .make .table .box .selects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reservation .make .table .box .select-people {
+        margin: 50px 0 0 0px;
+    }
+
+    .reservation .make .table .box .select-day {
+        margin: 20px 0 0 0;
+    }
+
+    .reservation .make .table .box .select-time {
+        margin: 20px 0 0 0;
+    }
+
+    .reservation .make .table .box .find-reserve {
+        margin: 20px 0 20px 50px;
+    }
+
+    .reservation .make .table .box .tpk {
+        margin-left: 100px;
+    }
+
+    .reservation .make .table .nisi {
+        margin-top: 15px;
+        text-align: center;
+    }
+}

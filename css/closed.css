@@ -1,0 +1,107 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/wood-grain-pattern-gray@1x.png);
+}
+
+.main .container {
+    height: 300px;
+    display: grid;
+    grid-template-rows: 150px 100px auto ;
+}
+
+/*SECTION1*/
+.main .container .section1 {
+    margin: 50px 0 0 350px;
+}
+
+.main .container .section1 p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main .container .section1 p i {
+    font-size: 1.7rem;
+    color: rgba(255, 0, 0, 0.664);
+}
+
+.main .container .section1 h2 {
+    letter-spacing: 1px;
+}
+
+/*SECTION2*/
+.main .container .section2 {
+    margin-left: 350px;
+}
+
+.main .container .section2 .box {
+    width: 570px;
+    height: 85px;
+    background: #fff;
+}
+
+.main .container .section2 .box p {
+    padding: 35px 0 0 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/*SECTION3*/ 
+.main .container .section3 p {
+    margin-left: 350px;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.815);
+    word-spacing: 2px;
+}
+
+.reserve {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    /*SECTION1*/
+    .main .container .section1 {
+        margin: 30px 0 0 15px;
+    }
+
+    .main .container .section1 h2 {
+        font-size: 1.4rem;
+    }
+
+    .reserve {
+        display: block;
+    }
+
+    /*SECTION2*/
+    .main .container .section2 {
+        margin-left: 15px;
+    }
+
+    .main .container .section2 .box {
+        width: 570px;
+        height: 20px;
+        background: #fff;
+    }
+
+    .main .container .section2 .box {
+        width: 250px;
+        height: 0;
+        background: transparent;
+    }
+
+    .main .container .section2 .box p {
+        padding: 20px 0 0 15px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.856);
+    }
+
+    /*SECTION3*/
+    .main .container .section3 p {
+        margin-left: 15px;
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.815);
+        word-spacing: 2px;
+    }
+}

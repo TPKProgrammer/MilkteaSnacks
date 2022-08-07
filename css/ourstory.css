@@ -54,6 +54,10 @@
     transform-origin: left;
 }
 
+.nav ul li a.active {
+    border-bottom: 3px solid #333;
+}
+
 .nav ul li a:hover::after {
     transform: scale(1);
 }

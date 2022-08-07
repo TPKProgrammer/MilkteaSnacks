@@ -79,35 +79,3 @@ function drinks(){
     a.innerHTML = "DRINKS";
     
 }
-
-
-/*var mediaQuery = window.matchMedia("(max-width: 700px)");
-
-function snacks(){
-    let y = window.matchMedia("(max-width: 425px)");
-
-    z.style.left = "110px";
-    y.style.left = "5px";
-    x.style.left = "-500px";
-    y.style.display = "block";
-    x.style.display = "none";
-}
-function drinks(){
-    z.style.left = "0px";
-    y.style.left = "500px";
-    x.style.left = "5px";
-    y.style.display = "none";
-    x.style.display = "block";
-}*
-/*document.addEventListener('DOMContentLoaded', init);
-
-function init(){
-    let query = window.matchMedia("(max-width: 425px)");
-
-    if(query.matches){
-        document.getElementById('Drinks').style.left = "5px";
-    }
-    else{
-        document.getElementById('Snacks').style.left = ""
-    }
-}*/
